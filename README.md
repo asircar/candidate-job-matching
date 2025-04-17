@@ -22,57 +22,65 @@ A hybrid matching system that combines structured and unstructured data analysis
 The system uses a `MixedDataProcessor` class that handles both structured and unstructured data:
 
 1. **Structured Data Processing**:
-   - Normalizes experience levels
-   - Processes location preferences
-   - Handles education level encoding
+   - Experience level normalization
+   - Education level encoding (High School → PhD)
+   - Location preference matching
+   - Work arrangement compatibility
 
 2. **Unstructured Data Processing**:
    - Text preprocessing using spaCy
-   - TF-IDF vectorization
-   - Semantic similarity using pre-trained SentenceTransformer
-   - Skill extraction from text
+   - TF-IDF vectorization for skill matching
+   - Semantic similarity using pre-trained SentenceTransformer (all-MiniLM-L6-v2)
+   - Skill extraction from text descriptions
 
 ### 2. Feature Engineering
 
 The system generates multiple similarity scores:
 
 1. **Structured Similarity**:
-   - Experience match score
-   - Education level match
-   - Location compatibility
+   - Experience match (years ratio)
+   - Education level match (hierarchical)
+   - Location compatibility (exact match)
+   - Work arrangement compatibility
 
 2. **Unstructured Similarity**:
-   - TF-IDF based text similarity
+   - TF-IDF based skill similarity
    - Semantic similarity using embeddings
-   - Skill overlap analysis
+   - Technical skill overlap ratio
 
 ### 3. Model Architecture
 
 The hybrid matcher uses a stacked approach:
 
-1. **Base Models**:
-   - Random Forest for structured features
+1. **Base Components**:
+   - Random Forest for final score prediction
    - Pre-trained SentenceTransformer for text embeddings (using 'all-MiniLM-L6-v2')
-   - Linear model for TF-IDF features
+   - TF-IDF vectorizer for skill matching
 
-2. **Meta Model**:
-   - Combines predictions from base models
-   - Weighted ensemble approach
-   - Calibrated probability outputs
+2. **Training Process**:
+   - 80/20 train/validation split
+   - Mean Squared Error optimization
+   - Feature importance tracking
+   - R² score validation
 
 ### 4. Explainability
 
 The system provides two levels of explanation:
 
 1. **Feature Importance**:
-   - Shows which factors had the most impact
-   - Ranks features by their contribution
-   - Provides global feature importance
+   - Global importance from Random Forest
+   - Contribution of each feature type:
+     - Semantic similarity (41.5%)
+     - Years experience (33.7%)
+     - TF-IDF similarity (10.9%)
+     - Education level (10.7%)
+     - Location match (2.8%)
+     - Structured similarity (0.5%)
 
 2. **Feature Contributions**:
-   - Shows how each factor affected the score
-   - Positive and negative contributions
-   - Local explanation for each prediction
+   - Per-prediction feature contributions
+   - Positive/negative impact analysis
+   - Local explanation for each match
 
 ## Installation
 
@@ -97,12 +105,27 @@ pip install -r requirements.txt
 
 ### 1. Training the Model
 
+First, generate training data:
+```bash
+python src/data/data_generator.py
+```
+This will create:
+- `sample_candidates.csv`: 100 diverse candidate profiles
+- `sample_jobs.csv`: 50 job listings
+
+Then train the model:
 ```python
 from src.train_hybrid_model import train_hybrid_model
 
-# Train the model with your data
+# Train the model with automatic train/validation split
 model = train_hybrid_model(training_data)
 ```
+
+The training process includes:
+- 80/20 train/validation split
+- Model evaluation metrics (MSE and R² score)
+- Feature importance analysis
+- Model saved as `hybrid_model.joblib`
 
 ### 2. Using the API
 

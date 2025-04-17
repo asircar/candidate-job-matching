@@ -1,0 +1,51 @@
+job_id,title,required_experience,required_tech_skills,required_soft_skills,education_requirement,location,salary_range_min,salary_range_max,work_arrangement,industry
+J001,Job Position 1,7.9,"['GraphQL', 'PostgreSQL', 'MongoDB', 'Machine Learning', 'Python', 'CI/CD']","['Communication', 'Leadership']",High School,Remote,130994,154973,Office,Healthcare
+J002,Job Position 2,12.2,"['Node.js', 'MongoDB', 'Git']","['Critical Thinking', 'Creativity', 'Leadership']",PhD,San Francisco,55852,76440,Remote,Healthcare
+J003,Job Position 3,10.5,"['JavaScript', 'React', 'CI/CD', 'SQL']","['Problem Solving', 'Teamwork']",PhD,Remote,43133,82049,Office,Education
+J004,Job Position 4,2.2,"['AWS', 'DevOps', 'Git', 'Node.js', 'React', 'PostgreSQL']","['Critical Thinking', 'Communication', 'Adaptability', 'Creativity']",Master,Tokyo,136552,165245,Hybrid,Manufacturing
+J005,Job Position 5,4.5,"['Machine Learning', 'Docker', 'Kubernetes', 'AWS', 'Java']","['Communication', 'Creativity', 'Teamwork', 'Critical Thinking']",Master,New York,113936,134471,Remote,Healthcare
+J006,Job Position 6,3.0,"['Java', 'GraphQL', 'PostgreSQL']","['Problem Solving', 'Critical Thinking']",Bachelor,New York,68531,85314,Hybrid,Education
+J007,Job Position 7,13.4,"['SQL', 'AWS', 'CI/CD']","['Problem Solving', 'Creativity', 'Critical Thinking']",Bachelor,Tokyo,144617,158561,Hybrid,Finance
+J008,Job Position 8,3.8,"['React', 'PostgreSQL', 'AWS']","['Critical Thinking', 'Problem Solving']",High School,London,100896,124851,Hybrid,Retail
+J009,Job Position 9,14.9,"['Docker', 'JavaScript', 'PostgreSQL', 'AWS']","['Adaptability', 'Creativity', 'Critical Thinking', 'Time Management']",High School,New York,144777,165080,Hybrid,Manufacturing
+J010,Job Position 10,9.1,"['Data Analysis', 'Java', 'AWS', 'Node.js', 'Python', 'PostgreSQL', 'MongoDB']","['Communication', 'Creativity']",Master,New York,56511,89536,Office,Finance
+J011,Job Position 11,1.1,"['AWS', 'Kubernetes', 'MongoDB']","['Teamwork', 'Creativity', 'Communication']",Bachelor,New York,141121,182976,Hybrid,Retail
+J012,Job Position 12,6.3,"['Git', 'MongoDB', 'REST API', 'Machine Learning', 'SQL', 'Node.js', 'PostgreSQL', 'AWS']","['Leadership', 'Teamwork', 'Problem Solving']",High School,Berlin,85213,123275,Office,Manufacturing
+J013,Job Position 13,9.8,"['Python', 'REST API', 'Data Analysis', 'AWS', 'Machine Learning', 'Docker', 'Git', 'Kubernetes']","['Critical Thinking', 'Creativity', 'Communication', 'Teamwork']",High School,Tokyo,57502,106797,Hybrid,Technology
+J014,Job Position 14,12.0,"['Git', 'GraphQL', 'SQL', 'Node.js', 'Machine Learning', 'MongoDB']","['Problem Solving', 'Communication', 'Critical Thinking', 'Time Management']",PhD,Tokyo,81070,122814,Office,Finance
+J015,Job Position 15,2.3,"['Machine Learning', 'AWS', 'JavaScript', 'MongoDB', 'Git', 'Python']","['Critical Thinking', 'Time Management', 'Creativity', 'Adaptability']",PhD,London,46068,56343,Remote,Healthcare
+J016,Job Position 16,9.0,"['AWS', 'CI/CD', 'Kubernetes', 'SQL', 'JavaScript', 'PostgreSQL', 'DevOps', 'GraphQL']","['Leadership', 'Adaptability']",Bachelor,Tokyo,51794,83106,Office,Finance
+J017,Job Position 17,3.9,"['React', 'SQL', 'Data Analysis', 'REST API', 'CI/CD', 'Kubernetes', 'Machine Learning']","['Teamwork', 'Creativity']",PhD,Tokyo,124100,166434,Office,Finance
+J018,Job Position 18,7.4,"['Docker', 'PostgreSQL', 'DevOps', 'CI/CD', 'REST API', 'Git', 'React', 'AWS']","['Communication', 'Teamwork']",PhD,Berlin,70532,88956,Office,Manufacturing
+J019,Job Position 19,14.2,"['Node.js', 'MongoDB', 'JavaScript', 'REST API', 'Docker', 'DevOps', 'React']","['Leadership', 'Creativity', 'Communication']",Master,Tokyo,141508,165695,Remote,Technology
+J020,Job Position 20,11.0,"['GraphQL', 'Docker', 'AWS']","['Leadership', 'Time Management', 'Adaptability']",PhD,Tokyo,124948,150423,Hybrid,Manufacturing
+J021,Job Position 21,8.4,"['Java', 'Kubernetes', 'Git', 'Python', 'SQL', 'Machine Learning', 'CI/CD']","['Adaptability', 'Critical Thinking']",PhD,San Francisco,133236,169080,Office,Technology
+J022,Job Position 22,0.4,"['Machine Learning', 'JavaScript', 'Node.js', 'Git']","['Problem Solving', 'Time Management', 'Critical Thinking', 'Adaptability']",Master,New York,149397,195605,Hybrid,Finance
+J023,Job Position 23,11.1,"['Node.js', 'Docker', 'REST API', 'Python', 'JavaScript']","['Problem Solving', 'Leadership', 'Adaptability']",PhD,Berlin,94336,120209,Office,Education
+J024,Job Position 24,1.2,"['Node.js', 'Data Analysis', 'CI/CD', 'Machine Learning', 'DevOps']","['Communication', 'Time Management']",Master,London,134584,169475,Hybrid,Healthcare
+J025,Job Position 25,7.2,"['Java', 'CI/CD', 'Node.js']","['Time Management', 'Communication']",High School,San Francisco,78430,110463,Remote,Healthcare
+J026,Job Position 26,10.9,"['Python', 'AWS', 'Kubernetes', 'Git', 'React', 'JavaScript', 'Docker', 'GraphQL']","['Time Management', 'Leadership', 'Creativity']",High School,San Francisco,81108,111671,Office,Manufacturing
+J027,Job Position 27,13.5,"['Docker', 'Machine Learning', 'React', 'SQL']","['Critical Thinking', 'Problem Solving']",Master,San Francisco,74357,98650,Office,Healthcare
+J028,Job Position 28,14.4,"['SQL', 'Python', 'Docker', 'Kubernetes', 'Java']","['Time Management', 'Creativity', 'Critical Thinking']",Master,London,57280,77398,Remote,Retail
+J029,Job Position 29,9.1,"['REST API', 'PostgreSQL', 'Kubernetes']","['Problem Solving', 'Critical Thinking', 'Adaptability', 'Leadership']",PhD,Remote,59400,77985,Office,Healthcare
+J030,Job Position 30,6.4,"['Java', 'Docker', 'Node.js', 'Data Analysis', 'AWS']","['Leadership', 'Critical Thinking', 'Teamwork', 'Time Management']",High School,San Francisco,67501,113422,Remote,Retail
+J031,Job Position 31,9.7,"['DevOps', 'Kubernetes', 'Git', 'CI/CD', 'Java', 'Machine Learning', 'MongoDB']","['Creativity', 'Time Management']",PhD,London,55555,78549,Hybrid,Healthcare
+J032,Job Position 32,1.5,"['REST API', 'Data Analysis', 'Git', 'GraphQL', 'AWS', 'DevOps', 'Docker']","['Critical Thinking', 'Time Management', 'Problem Solving', 'Adaptability']",High School,Tokyo,68003,95063,Hybrid,Education
+J033,Job Position 33,9.0,"['SQL', 'MongoDB', 'Docker', 'DevOps', 'REST API', 'React']","['Adaptability', 'Critical Thinking', 'Leadership']",Bachelor,San Francisco,90988,113831,Hybrid,Retail
+J034,Job Position 34,12.4,"['React', 'MongoDB', 'Data Analysis', 'REST API', 'Kubernetes']","['Teamwork', 'Creativity', 'Leadership']",PhD,London,100953,138355,Remote,Manufacturing
+J035,Job Position 35,10.4,"['CI/CD', 'AWS', 'Docker', 'PostgreSQL', 'Git', 'Machine Learning']","['Problem Solving', 'Leadership', 'Creativity', 'Time Management']",PhD,London,108995,137543,Office,Finance
+J036,Job Position 36,10.4,"['GraphQL', 'DevOps', 'PostgreSQL', 'Python']","['Creativity', 'Teamwork', 'Time Management']",Bachelor,New York,64749,76338,Remote,Technology
+J037,Job Position 37,3.4,"['Kubernetes', 'JavaScript', 'PostgreSQL', 'Machine Learning', 'React', 'SQL']","['Problem Solving', 'Communication']",Master,San Francisco,121399,145273,Hybrid,Education
+J038,Job Position 38,5.9,"['CI/CD', 'JavaScript', 'REST API', 'Machine Learning', 'Kubernetes']","['Problem Solving', 'Leadership']",Bachelor,San Francisco,125020,147149,Hybrid,Technology
+J039,Job Position 39,7.7,"['CI/CD', 'AWS', 'JavaScript', 'React', 'GraphQL', 'Python', 'Git']","['Time Management', 'Adaptability', 'Critical Thinking', 'Problem Solving']",High School,New York,67956,111845,Hybrid,Manufacturing
+J040,Job Position 40,13.5,"['AWS', 'Python', 'Docker', 'DevOps', 'SQL', 'Git', 'Kubernetes', 'React']","['Problem Solving', 'Adaptability']",PhD,New York,97821,135134,Remote,Education
+J041,Job Position 41,5.0,"['Python', 'SQL', 'GraphQL', 'Machine Learning']","['Time Management', 'Communication']",Master,Tokyo,44617,93972,Hybrid,Technology
+J042,Job Position 42,2.6,"['REST API', 'Node.js', 'PostgreSQL', 'GraphQL', 'DevOps', 'Data Analysis']","['Teamwork', 'Time Management', 'Adaptability', 'Critical Thinking']",PhD,London,51654,73564,Hybrid,Manufacturing
+J043,Job Position 43,5.2,"['GraphQL', 'Python', 'REST API', 'Kubernetes', 'DevOps', 'Machine Learning', 'AWS']","['Communication', 'Creativity', 'Adaptability']",Master,Berlin,55246,86950,Hybrid,Finance
+J044,Job Position 44,5.2,"['DevOps', 'REST API', 'Docker', 'JavaScript', 'Data Analysis', 'Git']","['Teamwork', 'Adaptability', 'Leadership', 'Critical Thinking']",PhD,New York,53852,101822,Remote,Healthcare
+J045,Job Position 45,8.5,"['Git', 'Python', 'Data Analysis', 'GraphQL', 'Machine Learning', 'SQL', 'Docker']","['Creativity', 'Teamwork', 'Communication', 'Time Management']",PhD,Tokyo,50677,87474,Hybrid,Education
+J046,Job Position 46,13.8,"['CI/CD', 'SQL', 'Docker']","['Problem Solving', 'Critical Thinking', 'Adaptability', 'Leadership']",Bachelor,San Francisco,88451,115967,Remote,Retail
+J047,Job Position 47,1.1,"['MongoDB', 'SQL', 'AWS', 'Machine Learning', 'GraphQL', 'Docker']","['Leadership', 'Problem Solving', 'Adaptability']",High School,New York,97351,133465,Office,Healthcare
+J048,Job Position 48,8.7,"['Java', 'Kubernetes', 'SQL', 'Docker', 'PostgreSQL']","['Critical Thinking', 'Problem Solving', 'Teamwork']",PhD,New York,74478,104303,Hybrid,Retail
+J049,Job Position 49,10.8,"['AWS', 'CI/CD', 'React', 'Data Analysis']","['Leadership', 'Teamwork', 'Critical Thinking']",Bachelor,London,123297,146656,Hybrid,Technology
+J050,Job Position 50,13.3,"['AWS', 'REST API', 'React', 'Git', 'Java', 'Data Analysis']","['Time Management', 'Leadership', 'Creativity', 'Teamwork']",Master,San Francisco,132384,155173,Remote,Healthcare

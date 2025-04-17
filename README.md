@@ -58,7 +58,7 @@ The hybrid matcher uses a stacked approach:
 
 1. **Base Models**:
    - Random Forest for structured features
-   - Neural network for text embeddings
+   - Pre-trained SentenceTransformer for text embeddings (using 'all-MiniLM-L6-v2')
    - Linear model for TF-IDF features
 
 2. **Meta Model**:

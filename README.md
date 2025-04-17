@@ -1,21 +1,18 @@
 # Candidate-Job Matching System
 
-A sophisticated hybrid matching system that combines structured and unstructured data analysis to provide explainable candidate-job matching scores. The system uses a combination of machine learning models and rule-based approaches to generate comprehensive matching scores.
+A hybrid matching system that combines structured and unstructured data analysis to provide explainable candidate-job matching scores. The system uses a combination of machine learning models and rule-based approaches to generate comprehensive matching scores.
 
 ## Features
 
 - **Hybrid Matching Algorithm**: Combines structured data (experience, education, location) with unstructured data (resume text, job descriptions)
 - **Explainable Scores**: Provides detailed feature importance and contributions for each match
 - **Comprehensive Matching Factors**:
-  - Experience match (years and relevance)
-  - Skills match (technical and soft skills)
-  - Education match (level and field)
+  - Experience match (years of experience)
+  - Education match (level)
   - Location match (preferences vs. requirements)
-  - Work arrangement match (remote, hybrid, onsite)
-  - Salary match (expectations vs. range)
-  - Industry experience match
-  - Resume text analysis
-- **REST API**: Easy integration with other systems
+  - Skills match (extracted from text)
+  - Text similarity (semantic and TF-IDF based)
+- **REST API**: FastAPI-based endpoint for easy integration
 - **Test Suite**: Comprehensive test cases covering various matching scenarios
 
 ## Algorithm Details
@@ -25,16 +22,15 @@ A sophisticated hybrid matching system that combines structured and unstructured
 The system uses a `MixedDataProcessor` class that handles both structured and unstructured data:
 
 1. **Structured Data Processing**:
-   - Standardizes work arrangement terms (Remote, Hybrid, Onsite)
    - Normalizes experience levels
    - Processes location preferences
-   - Handles salary expectations and ranges
+   - Handles education level encoding
 
 2. **Unstructured Data Processing**:
-   - Text preprocessing (tokenization, stemming)
+   - Text preprocessing using spaCy
    - TF-IDF vectorization
-   - Semantic similarity using embeddings
-   - Keyword extraction and matching
+   - Semantic similarity using pre-trained SentenceTransformer
+   - Skill extraction from text
 
 ### 2. Feature Engineering
 
@@ -44,13 +40,11 @@ The system generates multiple similarity scores:
    - Experience match score
    - Education level match
    - Location compatibility
-   - Work arrangement compatibility
-   - Salary range alignment
 
 2. **Unstructured Similarity**:
    - TF-IDF based text similarity
    - Semantic similarity using embeddings
-   - Keyword overlap analysis
+   - Skill overlap analysis
 
 ### 3. Model Architecture
 
@@ -84,7 +78,7 @@ The system provides two levels of explanation:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/candidate-job-matching.git
+git clone https://github.com/asircar/candidate-job-matching.git
 cd candidate-job-matching
 ```
 
@@ -125,15 +119,13 @@ curl -X POST "http://localhost:8001/match" \
            "candidate": {
              "years_experience": 5.0,
              "education_level": "Master",
-             "preferred_locations": ["New York", "Remote"],
-             "work_preference": "Hybrid",
+             "preferred_location": "New York",
              "resume_text": "Experienced software engineer..."
            },
            "job": {
              "required_experience": 5.0,
              "education_requirement": "Bachelor",
              "location": "New York",
-             "work_arrangement": "Hybrid",
              "job_description": "Looking for a senior engineer..."
            }
          }'
@@ -152,9 +144,11 @@ python src/test_api.py
 ├── src/
 │   ├── api/
 │   │   └── main.py              # FastAPI application
-│   │   └── data_generator.py    # Sample data generation
-│   └── train_hybrid_model.py    # Model training script
-├── tests/                       # Test suite
+│   ├── models/
+│   │   └── hybrid_matcher.py    # Core matching algorithm
+│   ├── data/
+│   │   └── test_cases.py        # Test scenarios
+│   └── test_api.py              # Test suite
 ├── requirements.txt             # Project dependencies
 ├── hybrid_model.joblib          # Trained model
 └── README.md                    # This file
